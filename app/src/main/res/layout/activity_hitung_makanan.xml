@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HitungMakanan">
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's buy the food you like, friends!"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <CheckBox
+        android:id="@+id/check_box_seblak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seblak (Rp 6,000)"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/button_tambah_seblak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        app:layout_constraintTop_toBottomOf="@+id/check_box_seblak"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:onClick="tambahJumlahSeblak"/>
+
+    <Button
+        android:id="@+id/button_kurang_seblak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintTop_toBottomOf="@+id/check_box_seblak"
+        app:layout_constraintStart_toEndOf="@+id/button_tambah_seblak"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:onClick="kurangJumlahSeblak"/>
+
+    <TextView
+        android:id="@+id/text_view_jumlah_seblak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount: 0"
+        app:layout_constraintTop_toBottomOf="@+id/check_box_seblak"
+        app:layout_constraintStart_toEndOf="@id/button_kurang_seblak"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <CheckBox
+        android:id="@+id/check_box_coklat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coklat (Rp 25,000)"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_jumlah_seblak"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/button_tambah_coklat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        app:layout_constraintTop_toBottomOf="@+id/check_box_coklat"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:onClick="tambahJumlahCoklat"/>
+
+    <Button
+        android:id="@+id/button_kurang_coklat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:onClick="kurangJumlahCoklat"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/button_tambah_coklat"
+        app:layout_constraintTop_toBottomOf="@+id/check_box_coklat" />
+
+    <TextView
+        android:id="@+id/text_view_jumlah_coklat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount: 0"
+        app:layout_constraintTop_toBottomOf="@+id/check_box_coklat"
+        app:layout_constraintStart_toEndOf="@id/button_kurang_coklat"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"/>
+
+    <CheckBox
+        android:id="@+id/check_box_basreng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basreng (Rp 12,000)"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_jumlah_coklat"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/button_tambah_basreng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        app:layout_constraintTop_toBottomOf="@+id/check_box_basreng"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:onClick="tambahJumlahBasreng"/>
+
+    <Button
+        android:id="@+id/button_kurang_basreng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:onClick="kurangJumlahBasreng"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/button_tambah_basreng"
+        app:layout_constraintTop_toBottomOf="@+id/check_box_basreng" />
+
+    <TextView
+        android:id="@+id/text_view_jumlah_basreng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount: 0"
+        app:layout_constraintTop_toBottomOf="@+id/check_box_basreng"
+        app:layout_constraintStart_toEndOf="@id/button_kurang_basreng"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"/>
+
+    <Button
+        android:id="@+id/button_hitung_total_produk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_jumlah_basreng"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="hitungTotalProduk"/>
+
+    <TextView
+        android:id="@+id/text_view_total_harga_produk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Total Price: Rp 0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_hitung_total_produk" />
+
+    <Button
+        android:id="@+id/button_buy"
+        android:onClick="hitungTotalProduk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/black"
+        android:background="@color/cardview_shadow_start_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_total_harga_produk"
+        android:text="Buy"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
