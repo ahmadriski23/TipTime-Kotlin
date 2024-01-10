@@ -29,8 +29,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     // memanggil halaman kedua
-    fun halamanKedua(view: View){
-        val intent = Intent(this,HitungMakanan::class.java)
+    fun halamanKedua(view: View) {
+        val intent = Intent(this, HitungMakanan::class.java)
+        startActivity(intent)
+    }
+
+    fun konversiMililiterPage(view: View) {
+    val intent = Intent(this, KonversiMililiterActivity::class.java)
         startActivity(intent)
     }
 

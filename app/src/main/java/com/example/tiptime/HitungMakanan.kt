@@ -102,6 +102,7 @@ class HitungMakanan : AppCompatActivity() {
         textView.text = "Amount: $jumlah"
     }
 
+    // function untuk memunculkan pesan jika kita klik button buy
     private fun showToast() {
         val totalHarga = textViewTotalHargaProduk.text.toString()
 

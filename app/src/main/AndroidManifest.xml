@@ -13,6 +13,11 @@
         android:theme="@style/Theme.TipTime"
         tools:targetApi="31">
         <activity
+            android:name=".KonversiMililiterActivity"
+            android:exported="false"
+            android:label="@string/title_activity_konversi_mililiter"
+            android:theme="@style/Theme.TipTime" />
+        <activity
             android:name=".HitungMakanan"
             android:exported="true" />
         <activity
